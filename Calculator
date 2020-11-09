@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main (String []args)
+	{
+		int num1;
+		int num2;
+		int add, sub, mul, div ; 
+		char _sign;
+		
+		System.out.println("Welcome to Jewel's Calculator");
+		System.out.println ("Input + for add, - for sub, * for mul, / for div");
+		
+		Scanner sc1 = new Scanner (System.in);
+		_sign = sc1.next().charAt(0);
+
+		System.out.println ("Input your 2 numbers");
+		Scanner sc2 = new Scanner (System.in);
+		num1 = sc2.nextInt();
+		
+		Scanner sc3 = new Scanner (System.in);
+		num2 = sc3.nextInt();
+		
+		switch (_sign)
+		{
+		case '+' : 
+			add = num1 + num2;
+			System.out.println(add);
+			break;
+			
+		case '-' : 
+			sub = num1 - num2;
+			System.out.println(sub);
+			break;
+			
+		case '*' :
+			mul = num1*num2;
+			System.out.println(mul);
+			break;
+		
+		case '/' :
+			div = num1 / num2;
+			System.out.println(div);
+			break;
+			
+		default : System.out.println(" Wrong decision !!");
+		}
+		
+			
+		sc1.close();
+		sc2.close();
+		sc3.close();
+	}
+}

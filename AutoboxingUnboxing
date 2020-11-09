@@ -1,0 +1,18 @@
+
+public class AutoboxingUnboxing {
+
+	public static void main(String[] args) {
+		// Autoboxing
+		int a = 10;
+		System.out.println(a);
+		Integer in = new Integer(a);
+		System.out.println(in);
+		
+		//Unboxing
+		int b = in;
+		System.out.println(b);
+		
+		Integer c = 20;
+		System.out.println(c);
+	}
+} 

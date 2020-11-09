@@ -1,0 +1,29 @@
+
+class Addition{
+		int id; 
+		String name;
+		void Add (int x, String b)
+		{
+			id = x;
+			name = b;
+			System.out.println(name + " "+ id);
+		}
+
+}
+
+/*Dear all, 
+This year all those annual gathering like Team outing and other activities will be postponed. So we'll have a moderate budget left on entertainment purposes. We want suggestions / ideas from you guys about spending this money on our official purposes.. 
+Please let us know your valuable suggestions. An impression of logical thought and wisdom should be expected on your ideas. Thanks.
+ */
+
+
+public class InputMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Addition jewel = new Addition();
+		 jewel.Add(100, "Puja");
+	}
+
+}

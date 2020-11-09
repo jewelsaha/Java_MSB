@@ -1,0 +1,39 @@
+
+// Local variable and Instance Variable 
+class Employeeinfo
+{
+	int a; 
+	int b;
+	int add;
+	void _addition (int x, int y)
+	{
+		a = x;		b = y;
+		add = x +y;
+		System.out.println (add);
+	 }
+}
+
+// Static / class Variable 
+class Emp{
+	public static int ab;
+	public static String bo; 
+}
+
+
+public class Variables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Employeeinfo einfo = new Employeeinfo ();
+		einfo._addition(20, 30);
+		
+		Emp.ab = 50;
+		Emp.bo = "Jewel";
+		System.out.println(Emp.ab + " "+ Emp.bo);
+	}
+
+}
+
+/* for more details : 
+ https://www.geeksforgeeks.org/variables-in-java/    */
